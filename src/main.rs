@@ -16,7 +16,7 @@ fn main() {
     }
 
     // Wait 0.1 seconds, then open another copy of itself.
-    // Doesn't close itself on purpose: hogs more resources and makes it unclear which rickroll.exe is the 'active' one👍
+    // Doesn't close itself on purpose: hogs more resources and makes it unclear which rickroll.exe is the 'active' one 👍
     thread::sleep(time::Duration::from_millis(100));
     rickroll.execute().unwrap();
 }
